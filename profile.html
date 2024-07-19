@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - CHARLIETA</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <a href="index.html" class="logo">CHARLIETA</a>
+        </header>
+
+        <div class="container">
+            <main class="content">
+                <section class="profile-section">
+                    <img src="me.jpg" alt="Profile Picture" class="profile-pic">
+                    <div class="profile-info">
+                        <h3>Nicole Rivera</h3>
+                        <p>Member Since: June 2024</p>
+                        <a href="#" class="btn-edit" id="editProfileBtn">Edit Profile</a>
+                    </div>
+                </section>
+
+                <section class="profile-form" id="profileForm">
+                    <h2>Edit Profile</h2>
+                    <form>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" value="Nicole Rivera">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" value="nriveraaa07@gmail.com">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" placeholder="********">
+                        <button type="submit">Save Changes</button>
+                    </form>
+                </section>
+
+                <section class="orders-section" id="ordersSection">
+                    <h2>Recent Orders</h2>
+                    <div class="order-list">
+                        <div class="order-item">
+                            <p>Order #12345</p>
+                            <p>Date: July 15, 2024</p>
+                            <a href="#" class="btn-view">View Details</a>
+                        </div>
+                        <div class="order-item">
+                            <p>Order #12346</p>
+                            <p>Date: July 20, 2024</p>
+                            <a href="#" class="btn-view">View Details</a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <footer>
+            <div class="footercontainer">
+                <a href="index.html" class="logo">CHARLIETA</a>
+                <div class="socmed">
+                    <a href="#"><i class="uil uil-facebook"></i></a>
+                    <a href="#"><i class="uil uil-instagram"></i></a>
+                    <a href="#"><i class="uil uil-twitter"></i></a>
+                    <a href="#"><i class="uil uil-google"></i></a>
+                    <a href="#"><i class="uil uil-linkedin"></i></a>
+                </div>
+
+                <div class="footernav">
+                    <ul>
+                        <li><a href="#">Customer Service</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Payment</a></li>
+                        <li><a href="#">Follow Us</a></li>
+                        <li><a href="#">CHARLIETA App Download</a></li>
+                    </ul>
+                </div>
+
+                <div class="footerbtn">
+                    <p>&copy; 2024 Nicole Rivera</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="profile.js"></script>
+</body>
+</html>

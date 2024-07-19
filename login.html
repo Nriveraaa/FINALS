@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="rfstyle.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">CHARLIETA</a>
+    </header>
+    <div class="form-container">
+        <form action="index.html" method="POST">
+            <input type="hidden" name="_redirect" value="https://www.charlieta.com">
+            <h2>Login</h2>
+            <div class="inputBox">
+                <input type="text" name="identifier" required>
+                <label>Email or Phone Number</label>
+            </div>
+            <div class="inputBox">
+                <input type="password" name="password" required>
+                <label>Password</label>
+            </div>
+            <div class="show-password">
+                <input type="checkbox" id="togglePassword">
+                <label for="togglePassword">Show password</label>
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="Login">
+            </div>
+            <p>Don't have an account? <a href="registration.html">Create one</a></p>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 CHARLIETA. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const togglePassword = document.getElementById('togglePassword');
+        const password = document.querySelector('input[name="password"]');
+        
+        togglePassword.addEventListener('change', function() {
+            const type = this.checked ? 'text' : 'password';
+            password.setAttribute('type', type);
+        });
+    </script>
+</body>
+</html>
